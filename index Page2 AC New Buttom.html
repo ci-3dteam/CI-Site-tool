@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArchiCAD BIM Resources</title>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      color: #0f1b33;
+    }
+    header {
+      background-color: #0f1b33;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2, h3 {
+      text-align: left;
+      border-bottom: 2px solid #4d5c80;
+      padding: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 10px;
+    }
+    @media (min-width: 1200px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    a.card {
+      display: block;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+    }
+    a.card:hover {
+      background-color: #0f1b33;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    a.card:active {
+      transform: scale(0.96);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ARCHICAD</h1>
+  </header>
+  <div class="container">
+
+    <!-- Section 1 -->
+    <h2 onclick="toggleSection('manualSection')">📘 เอกสารคู่มือและการฝึกอบรม ArchiCAD ▾</h2>
+    <div id="manualSection" class="grid">
+      <a href="https://sites.google.com/view/poducts-aec3d-tools/archicad-document" class="card"><p>คู่มือการติดตั้ง ArchiCAD</p></a>
+      <a href="#" class="card"><p>คู่มือการใช้งาน ArchiCAD</p></a>
+      <a href="https://workdrive.zoho.com/folder/u03w6a0590bc870cb40dfaadbe3705715fb15" class="card"><p>Outline Training</p></a>
+      <a href="https://sites.google.com/view/poducts-aec3d-tools/archicad-system-requirements" class="card"><p>System Requirement</p></a>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 onclick="toggleSection('supportSection')">🎯 เอกสารส่งเสริมการขาย ▾</h2>
+    <div id="supportSection" class="grid">
+      <a href="https://app-service.synology.me:8080/sharing/Qzi8ieSLD" class="card"><p>Slide Presentation (ฝ่ายขาย)</p></a>
+      <a href="#" class="card"><p>Brochure ArchiCAD</p></a>
+      <a href="https://app-service.synology.me:8080/sharing/3gjdkaW6A" class="card"><p>Feuture Compare Subscription</p></a>
+      <a href="#" class="card"><p>เอกสารสำหรับ ฝ่ายขาย</p></a>
+    </div>
+
+    <!-- Section 3 -->
+    <h2>📄 แบบฟอร์มเอกสาร </h2>
+    <div id="formSection" class="grid">
+      <a href="#" class="card"><p>แบบฟอร์มแจ้งปัญหา</p></a>
+      <a href="#" class="card"><p>แบบฟอร์ม Destroy ArchiCAD</p></a>
+    </div>
+
+
+
+    <!-- Section 4 -->
+     
+    <div id="licenseSection" class="grid" style="display: grid;">
+      <div class="card" style="grid-column: span 4;">
+        <h3>คุณสมบัติทั่วไปของ License</h3>
+        <ul style="text-align: left; line-height: 1.8; padding-left: 20px;">
+          <li> ซอฟต์แวร์ BIM ด้านงานออกแบบเขียนแบบสถาปัตยกรรม</li>
+          <li> รูปแบบ License : Software key (ใช้อีเมลในการ Sign-in ใช้งาน)</li>
+          <li> License แบบ Network : ใช้งานร่วมกันผ่าน Network VPN / LAN (เฉพาะ Professional เท่านั้น)</li>
+        </ul>
+      </div>
+
+      <div class="card" style="grid-column: span 4;">
+        <h3>ข้อแตกต่างระหว่าง Standard กับ Professional</h3>
+        <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 14px;">
+          <thead style="background-color: #f1f1f1;">
+            <tr>
+              <th style="padding: 8px; border: 1px solid #ccc;">ความสามารถ</th>
+              <th style="padding: 8px; border: 1px solid #ccc;">Standard</th>
+              <th style="padding: 8px; border: 1px solid #ccc;">Professional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 8px; border: 1px solid #ccc;">Hotlinked Modules</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border: 1px solid #ccc;">Teamwork / BIM Cloud</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border: 1px solid #ccc;">Rendering โดยใช้ Cinerender</td>
+              <td>❌</td>
+              <td>✔️</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      ข้อมูลสำหรับ ArchiCAD | อัปเดตล่าสุด: มิถุนายน 2025
+    </footer>
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "none" ? "grid" : "none";
+    }
+
+    window.onload = function () {
+      document.getElementById("manualSection").style.display = "grid";
+      document.getElementById("supportSection").style.display = "grid";
+      document.getElementById("formSection").style.display = "grid";
+      document.getElementById("licenseSection").style.display = "grid";
+    };
+  </script>
+</body>
+</html>

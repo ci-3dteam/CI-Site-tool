@@ -1,0 +1,175 @@
+  <!DOCTYPE html>
+  <html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchiCAD BIM Resources</title>
+    <style>
+      body {
+        font-family: 'Prompt', sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        color: #0f1b33;
+      }
+header {
+  background-color: #0f1b33;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      h2 {
+        border-bottom: 2px solid #4d5c80;
+        padding: 10px;
+        margin-top: 30px;
+        cursor: pointer;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 10px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        text-align: center;
+      }
+      .card img {
+        height: 100px;
+        margin-bottom: 0px;
+      }
+      .button {
+        display: inline-block;
+        padding: 8px 18px;
+        background-color: white;
+        color: #0f1b33;
+        border: 1px solid #0f1b33;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .button:hover {
+        background-color: #0f1b33;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      .button:active {
+        transform: scale(0.96);
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ARCHICAD</h1>
+    </header>
+    <div class="container">
+
+      <h2 onclick="toggleSection('docSection')">📘 DOCS & MANUAL</h2>
+      <div id="docSection" class="grid">
+        <div class="card">
+          <p>เอกสารคู่มือและการฝึกอบรม ArchiCAD</p>
+          <a href="#" class="button">เปิดเอกสาร</a>
+        </div>
+
+        <div class="card">
+          <p>เอกสารส่งเสริมการขาย </p>
+          <a href="#" class="button">เปิดเอกสาร</a>
+        </div>
+  <!-- Write your comments here -->
+
+
+      </div>
+
+      <h2 onclick="toggleSection('downloadSection')">💻 DOWNLOAD</h2>
+      <div id="downloadSection" class="grid">
+        <div class="card">
+          <img src="https://i.postimg.cc/jd9HwgzP/AC.png" alt="ArchiCAD">
+          <p>ArchiCAD Installer</p>
+          <a href="https://sites.google.com/view/poducts-aec3d-tools/01-archicad-bim/archicad-downloads" class="button">Download</a>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/7YC7k3p6/Template.png" alt="TPL">
+          <p>Template .TPL</p>
+          <a href="https://sites.google.com/view/poducts-aec3d-tools/01-archicad-bim/template-downloads" class="button">Download</a>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/66bRgjbg/MEP.png" alt="MEP">
+          <p>MEP Modeler</p>
+          <a href="#" class="button">Download</a>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/NMz66pW3/Thai-BIM-2.png" alt="ThaiBIM">
+          <p>ThaiBIM Installer</p>
+          <a href="https://sites.google.com/view/poducts-aec3d-tools/01-archicad-bim/thaibim-downloads" class="button">Download</a>
+        </div>
+      </div>
+
+      <h2 onclick="toggleSection('addonSection')">🧩 ADD-ONS</h2>
+      <div id="addonSection" class="grid">
+        <div class="card">
+          <img src="https://i.postimg.cc/6pMf6WM6/01-archicad-bim/reinforcement-39.jpg" alt="Eptar">
+          <p>Eptar Reinforcement</p>
+          <a href="https://sites.google.com/view/poducts-aec3d-tools/01-archicad-bim/eptar-downloads" class="button">Download</a>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/159Fgxn8/Add-On.png" alt="Add-Ons">
+          <p>Add-Ons ArchiCAD</p>
+          <a href="https://www.graphisoft.com/resources-and-support/downloads/?section=add-on" class="button">Download</a>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvRZ8RERCBP0YjuhD-m7fhDZIsaDlyzlnEs2X-Ctl5H1LULhgoqCOx7GF1x_W5NxElNg&usqp=CAU" alt="Codemeter">
+          <p>Codemeter</p>
+          <a href="https://www.graphisoft.com/downloads/protection_key" class="button">Download</a>
+        </div>
+        <div class="card">
+          <img src="https://graphisoft.com/ftp/downloads/license-manager-tool-icon.png" alt="Manager">
+          <p>License Manager Tool</p>
+          <a href="https://www.graphisoft.com/downloads/licensing/help/INT/pc" class="button">Download</a>
+        </div>
+      </div>
+
+
+      <footer>
+        ข้อมูลสำหรับ ArchiCAD | อัปเดตล่าสุด: มิถุนายน 2025
+      </footer>
+    </div>
+
+    <script>
+      function toggleSection(id) {
+        const section = document.getElementById(id);
+        if (section.style.display === "none") {
+          section.style.display = "grid";
+        } else {
+          section.style.display = "none";
+        }
+      }
+
+      // ตั้งค่าเริ่มต้น (แสดงทั้งหมด)
+      window.onload = function () {
+        document.getElementById("docSection").style.display = "grid";
+        document.getElementById("downloadSection").style.display = "grid";
+        document.getElementById("addonSection").style.display = "grid";
+      };
+    </script>
+  </body>
+  </html>
